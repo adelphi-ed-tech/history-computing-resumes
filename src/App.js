@@ -6,7 +6,7 @@ import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-lg">
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index path="/" element={<Directory />} />
