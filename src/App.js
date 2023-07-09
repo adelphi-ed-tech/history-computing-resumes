@@ -20,14 +20,12 @@ function App() {
 function Main() {
   return (
     <div>
-      <header>
-        <h1>
-          <Link to="/">History of Computing Resumes</Link>
-        </h1>
-      </header>
       <Outlet />
+      <footer>
+          <Link to="/">History of Computing Resumes</Link>
+      </footer>
     </div>
-  );
+);
 }
 
 function Directory() {
