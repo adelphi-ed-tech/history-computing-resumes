@@ -2,6 +2,7 @@ import { Outlet, Link, Routes, Route } from "react-router-dom";
 
 import Al_Khwarizmi from "./Al_Khwarizmi";
 import Alan_Turing from "./Alan_Turing";
+import Grace_Hopper from "./Grace_Hopper";
 
 import "./styles.css";
 
@@ -36,13 +37,14 @@ function Directory() {
       <ol>
         <li>
           <Link to="Al-Khwarizmi">al-Khwarizmi, Muhammad ibn Musa</Link>
+        
         </li>
         <li>Babbage, Charles</li>
         <li>Berners-Lee, Tim</li>
         <li>Bush, Vannevar</li>
         <li>Dijkstra, Edsger</li>
         <li>Englebart, Douglas</li>
-        <li>Hopper, Grace</li>
+        <li> <Link to="Grace-Hopper">Hopper, Grace</Link></li>
         <li>Johnson, Katherine</li>
         <li>Knuth, Donald</li>
         <li>Lovelace, Ada</li>
