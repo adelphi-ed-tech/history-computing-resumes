@@ -1,6 +1,7 @@
 import { Outlet, Link, Routes, Route } from "react-router-dom";
 
 import Al_Khwarizmi from "./Al_Khwarizmi";
+import Alan_Turing from "./Alan_Turing";
 
 import "./styles.css";
 
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index path="/" element={<Directory />} />
-          <Route path="al-khwarizmi" element={<Al_Khwarizmi />} />
+                  <Route path="al-khwarizmi" element={<Al_Khwarizmi />} />
+                  <Route path="alan-turing" element={<Alan_Turing />} />
         </Route>
       </Routes>
     </div>
@@ -46,7 +48,7 @@ function Directory() {
         <li>Lovelace, Ada</li>
         <li>Shannon, Claude</li>
         <li>Torvalds, Linus</li>
-        <li>Turning, Alan</li>
+        <li> <Link to="Alan_Turing">Turing, Alan </Link></li>
         <li>von Neumann, John</li>
         <li>Wing, Jeanette</li>
       </ol>
