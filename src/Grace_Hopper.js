@@ -9,7 +9,7 @@ I was one of the first
 `
 
 const skills = {
-  "Algebra": 5,
+  "Computer Programming": 5,
   "Algorithms": 5,
   "Trigonometry": 5,
   "Astronomy": 4,
@@ -24,28 +24,20 @@ const interests = ["Chess", "Falconry", "Cooking"];
 
 const experience = [
   {
-    "company": "US Nacy",
+    "company": "World War II - US Navy",
     "title": "Rear Admiral",
-    "years": "c. 813",
+    "years": "1943",
     "location": "",
     "summary": `.`
   },
   {
-    "company": "On the Calculation with Hindu Numerals",
-    "title": "Author",
-    "years": "c. 820",
-    "location": "Baghdad",
+    "company": "",
+    "title": "",
+    "years": "",
+    "location": "",
     "summary": `In this work I describe the Hindu-Arabic numeral system, which
     became the number system used by most of the world today. I also describe
     the use of zero as a placeholder, which was a revolutionary concept at the time.`
-  },
-  {
-    "company": "Book of the Description of the Earth",
-    "title": "Author",
-    "years": "c. 833",
-    "location": "Baghdad",
-    "summary": `Here I detail the coordinates of cities and other geographical features
-    of the time, and describe how to project the spherical surface of the earth onto a plane.`
   }
 ]
 
@@ -69,7 +61,7 @@ function Grace_Hopper() {
       title="Rear Admiral"
       phone="212-555-1212"
       email="algorithms720@hotmail.com"
-      web="https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi"
+      web="https://en.wikipedia.org/wiki/Grace_Hopper"
       summary={summary}
       profilePic={profilePic}
       skills={skills} 
