@@ -24,8 +24,8 @@ const interests = ["Chess", "Falconry", "Cooking"];
 
 const experience = [
   {
-    "company": "The Compendious Book on Calculation by Completion and Balancing",
-    "title": "Author",
+    "company": "US Nacy",
+    "title": "Rear Admiral",
     "years": "c. 813",
     "location": "",
     "summary": `.`
@@ -54,10 +54,11 @@ const experience = [
 const education = [
   {
     "school": "Yale University",
-    "degree": "MS, PhD",
-    "year": "",
-    "location": "",
-    "summary": ``
+    "degree": "PhD",
+    "year": "1934",
+    "location": "New Haven, CT",
+    "summary": "At Yale, I received my Masters in 1930 and then my PhD in 1934. I later on became 1 of 3 the first modern programmers."
+    ``
   }
 ]
 
@@ -65,7 +66,7 @@ function Grace_Hopper() {
   return (
     <Memphis 
       name="Grace-Hopper" 
-      title=""
+      title="Rear Admiral"
       phone="212-555-1212"
       email="algorithms720@hotmail.com"
       web="https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi"
