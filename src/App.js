@@ -37,7 +37,7 @@ function Directory() {
     <div>
       <ol>
         <li>
-          <Link to="Al-Khwarizmi">al-Khwarizmi, Muhammad ibn Musa</Link>
+          <Link to="al-khwarizmi">al-Khwarizmi, Muhammad ibn Musa</Link>
         
         </li>
         <li>Babbage, Charles</li>
@@ -51,7 +51,7 @@ function Directory() {
         <li>Lovelace, Ada</li>
         <li>Shannon, Claude</li>
         <li>Torvalds, Linus</li>
-        <li> <Link to="Alan_Turing">Turing, Alan </Link></li>
+        <li> <Link to="Alan-Turing">Turing, Alan </Link></li>
         <li>von Neumann, John</li>
         <li>Wing, Jeanette</li>
       </ol>
