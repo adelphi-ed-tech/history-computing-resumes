@@ -1,5 +1,5 @@
 import Memphis from "./templates/Memphis"
-import profilePic from "./res/khwarizmi.png"
+import profilePic from "./res/turing.png"
 
 
 const summary = `
@@ -14,44 +14,45 @@ for artificail intelligence for the next millennia.
 const skills = {
   "Algebra": 5,
   "Algorithms": 5,
-  "Trigonometry": 5,
-  "Astronomy": 4,
-  "Cartography": 4,
-  "English": 5,
-  "Persian": 5,
-  "Greek": 2
+  "Cryptography": 5,
+  "Physics": 4,
+  "Biology": 4,
+  "Chemistry": 3,
+  "English": 4,
+  "German": 2
 }
 
-const interests = ["Chess", "Falconry", "Cooking"];
+const interests = ["Running", "Rowing", "Gay Rights"];
   
 
 const experience = [
   {
-    "company": "The Compendious Book on Calculation by Completion and Balancing",
+    "company": "On Computable Numbers, with an Application to the Entscheidungsproblem",
     "title": "Author",
-    "years": "c. 813",
-    "location": "Baghdad",
-    "summary": `I wrote the first book on algebra and algorithms, 
-    which was translated into Latin in the 12th century and remained a standard 
-    mathematical text in Europe until the 16th century. Among other import proofs,
-    I demonstrate how to to solve quadratic equations by completing the square.`
+    "years": "1936",
+    "location": "London",
+    "summary": `I presented the notion of a universal machine, which was later called the
+        "Universal Turing Machine"", and then the "Turing machine". The universal machine is capable
+        of computing anything that is computable: It is considered the precursor to the modern computer.`
   },
   {
-    "company": "On the Calculation with Hindu Numerals",
-    "title": "Author",
-    "years": "c. 820",
-    "location": "Baghdad",
-    "summary": `In this work I describe the Hindu-Arabic numeral system, which
-    became the number system used by most of the world today. I also describe
-    the use of zero as a placeholder, which was a revolutionary concept at the time.`
+    "company": "Bletchly Park",
+    "title": "Cryptographist",
+    "years": "1939-1945",
+    "location": "Buckinghamshire, England",
+    "summary": `With the assistance of others I created the Bombe to break the
+    German Engima Code.  I also decrypted the more complex German naval 
+    communications using cryptologic process using an early form of Bayesian 
+    networks to infer information about the settings of the Enigma machine.`
   },
   {
-    "company": "Book of the Description of the Earth",
-    "title": "Author",
-    "years": "c. 833",
-    "location": "Baghdad",
-    "summary": `Here I detail the coordinates of cities and other geographical features
-    of the time, and describe how to project the spherical surface of the earth onto a plane.`
+    "company": "National Physics Labatory",
+    "title": "Scientist",
+    "years": "1945 -1948",
+    "location": "London",
+    "summary": `My design for the Automatic Computing Engine (ACE) was the 
+     first complete specification of an electronic stored-program all-purpose 
+     digital computer.`
   }
 ]
 
@@ -59,12 +60,19 @@ const experience = [
 
 const education = [
   {
-    "school": "House of Wisdom",
-    "degree": "Scholar",
-    "year": "c. 820",
-    "location": "Baghdad",
-    "summary": `Distinguished scholar of the Baghdad House of Wisdom, a center for the study of mathematics, astronomy, linguistics, and philosophy.`
-  }
+    "school": "King's College",
+    "degree": "Fellow",
+    "year": "1934",
+    "location": "Cambridge",
+    "summary": `His dissertation proved the central limit theorem.`
+    },
+  {
+     "school": "Princeton University",
+     "degree": "PhD",
+     "year": "1938",
+     "location": "Princeton, NJ",
+     "summary": `Studied mathematics and cryptology at the Institute for Advanced Study`
+    }
 ]
 
 function Alan_Turing() {

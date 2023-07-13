@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\docs",
-    "\\public"
+    "\\public",
+    "\\src",
+    "\\src\\templates"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\src\\Alan_Turing.js",
   "PreviewInSolutionExplorer": false
 }
