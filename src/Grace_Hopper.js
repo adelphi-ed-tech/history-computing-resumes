@@ -1,5 +1,5 @@
 import Memphis from "./templates/Memphis"
-import profilePic from "./res/khwarizmi.png"
+import profilePic from "./res/GraceHopper.jpg"
 
 
 const summary = `
