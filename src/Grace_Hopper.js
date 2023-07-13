@@ -5,7 +5,7 @@ import profilePic from "./res/khwarizmi.png"
 const summary = `
 Hi. I'm Grace Hopper. 
 I am an American computer scientist, mathematician, and US Navy rear admiral.
-I was one of the first 
+I was one of the first programmers.
 `
 
 const skills = {
@@ -35,9 +35,7 @@ const experience = [
     "title": "",
     "years": "",
     "location": "",
-    "summary": `In this work I describe the Hindu-Arabic numeral system, which
-    became the number system used by most of the world today. I also describe
-    the use of zero as a placeholder, which was a revolutionary concept at the time.`
+    "summary": `.`
   }
 ]
 
@@ -50,7 +48,7 @@ const education = [
     "year": "1934",
     "location": "New Haven, CT",
     "summary": "At Yale, I received my Masters in 1930 and then my PhD in 1934. I later on became 1 of 3 the first modern programmers."
-    ``
+    
   }
 ]
 
@@ -60,7 +58,7 @@ function Grace_Hopper() {
       name="Grace-Hopper" 
       title="Rear Admiral"
       phone="212-555-1212"
-      email="algorithms720@hotmail.com"
+      email="grace_hopper@hotmail.com"
       web="https://en.wikipedia.org/wiki/Grace_Hopper"
       summary={summary}
       profilePic={profilePic}
