@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Main />}>
           <Route index path="/" element={<Directory />} />
                   <Route path="al-khwarizmi" element={<Al_Khwarizmi />} />
+                  <Route path="grace-hopper" element={<Grace_Hopper />} />
                   <Route path="alan-turing" element={<Alan_Turing />} />
         </Route>
       </Routes>
