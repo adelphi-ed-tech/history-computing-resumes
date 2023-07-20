@@ -44,7 +44,7 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
                         <img src={profilePic} alt={name} className="img-fluid" />
                     </div>
                 </div>
-                <div className="col-10 intro">
+                <div className="col-30 intro">
                     <h1>{name}</h1>
                     <h2 className="text-secondary">{title}</h2>
                     <p className="text-secondary">{summary}</p>
@@ -91,8 +91,6 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
         </div>
     );
 }
-
-
 
 function Experience({ experience }) {
     const work = experience.map((work) => Work(work));
@@ -219,6 +217,5 @@ function Circle(filled, color) {
         </div>
     );
 }
-
 
 export default Grace;

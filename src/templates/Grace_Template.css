@@ -16,7 +16,7 @@
 .Grace footer {
     height: 80px;
     font-size: 16px;
-    border-top: 5px solid rgb(139, 40, 40);
+    border-top: 5px solid rgb(45, 112, 18);
 }
 .Grace footer svg{
     font-size: 22px;
@@ -31,35 +31,40 @@
     text-decoration: none;
 }
 
-
 .yellow {
     background-color: #FBCD53;
 }
 
 .intro {
     padding-left: 90px;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 
 h1 {
-    margin-top: 1em;
-    font-size: 72px;
+    margin-top: 3em;
+    font-size: 80px;
     font-weight: bold;
-    color: #990000;
+    color: #0f03e7;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
+h2 {
+    margin-top: 1em;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d3b67;
+}
+
+p {
+    margin-top: 1em;
+    font-size: 20px;
+    color: #000000;
+}
 .red {
     background-color: #990000;
 }
 .text-red {
     color: #990000;
-}
-
-
-.profile {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .skills h3, .interests h3, .education h3, .experience h3 {
