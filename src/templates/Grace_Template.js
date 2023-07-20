@@ -36,30 +36,32 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
 
             {/* Profile pick and summary */}
             <div className="row">
-                <div className="col-5 pe-0 border-end border-black border-4 yellow d-flex justify-content-center  align-items-center">
-
+                <div className="col-4">
+                    <h1>{name}</h1>
+                    <h2>/ PROFILE</h2>
+                    <p className="text-secondary">{summary}</p>
+                    <h2>/ SKILLS</h2>
+                    <Skills skills={skills} />
                 </div>
-                <div className="col-2">
+                <div className="col-3">
                     <div className="profile">
-                        <img src={profilePic} alt={name} className="img-fluid" />
+                        <img src={profilePic} alt={name} className="img-fluid rounded-circle" />
                     </div>
                 </div>
-                <div className="col-30 intro">
-                    <h1>{name}</h1>
+                <div className="col-4 intro">
                     <h2 className="text-secondary">{title}</h2>
-                    <p className="text-secondary">{summary}</p>
-                </div>
+                    <h2>/ Experience </h2>
+                    <Experience experience={experience} />
+
+                    
             </div>
 
             {/* Skills and experience */}
-            <div className="row border-top border-black border-4">
-                <div className="col-3 border-end border-black border-4 p-0">
-                    <h2 className="text-center bubblegum border-bottom">My Skills</h2>
-                    <Skills skills={skills} />
-                </div>
-                <div className="col-9 p-0">
-                    <h2 className="text-center bubblegum border-bottom">My Experience</h2>
-                    <Experience experience={experience} />
+           <div className="row border-top border-black border-4">
+
+                
+
+            
                 </div>
             </div>
 
@@ -100,7 +102,6 @@ function Experience({ experience }) {
         </div>
     )
 }
-
 
 function Work({ company, title, years, location, summary }, i) {
     return (

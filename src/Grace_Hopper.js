@@ -10,9 +10,9 @@ I was one of the first programmers of the Harvard Mark I computer and became a p
 
 const skills = {
   "Computer Programming": 5,
-  "Algorithms": 5,
-  "Trigonometry": 5,
-  "Physics": 5,
+  "Algorithms": 4,
+  "Trigonometry": 3,
+  "Physics": 3,
 }
 
 const interests = ["Needlepoint", "Reading", "Piano"];
