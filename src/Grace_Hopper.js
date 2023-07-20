@@ -1,4 +1,4 @@
-import Memphis from "./templates/Memphis"
+import GraceTemplate from "./templates/Grace_Template"
 import profilePic from "./res/GraceHopper.jpg"
 
 
@@ -58,7 +58,7 @@ const education = [
 
 function Grace_Hopper() {
   return (
-    <Memphis 
+    <GraceTemplate
       name="Grace-Hopper" 
       title="Rear Admiral"
       phone="212-555-1212"
