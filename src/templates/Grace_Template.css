@@ -1,0 +1,87 @@
+
+.Grace {
+    overflow: hidden;
+    /* max-width: 1080px; */
+}
+
+.Grace header, .Grace footer {
+    background-color: "#bf9553";
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    height: 140px;
+}
+
+.Grace footer {
+    height: 80px;
+    font-size: 16px;
+    border-top: 5px solid rgb(139, 40, 40);
+}
+.Grace footer svg{
+    font-size: 22px;
+}
+
+.Grace footer .col {
+    height: 24px;
+}
+
+.Grace footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.yellow {
+    background-color: #FBCD53;
+}
+
+.intro {
+    padding-left: 90px;
+    padding-right: 60px;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 72px;
+    font-weight: bold;
+    color: #990000;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.red {
+    background-color: #990000;
+}
+.text-red {
+    color: #990000;
+}
+
+
+.profile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.skills h3, .interests h3, .education h3, .experience h3 {
+    font-size: 1.2em;
+}
+
+.experience h3 {
+    margin-top: 1.25em;
+}
+
+.experience h4 {
+    font-size: 1.1em;
+}
+
+.skills, .interests, .education, .experience {
+    margin-left: 50px;
+}
+
+.education, .experience {
+    margin-right: 50px;
+}
+
+.border-bottom {
+    border-bottom: 4px solid black !important;
+}
