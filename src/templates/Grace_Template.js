@@ -46,6 +46,8 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
                 <div className="col-3">
                     <div className="profile">
                         <img src={profilePic} alt={name} className="img-fluid rounded-circle" />
+                        <img src = './res/OrangeRectangle.png' />
+                        <img src = './res/OrangeQuarterCircle.jpg' />
                     </div>
                 </div>
                 <div className="col-4 intro">
