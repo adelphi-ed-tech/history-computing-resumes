@@ -103,3 +103,11 @@ p {
 .border-bottom {
     border-bottom: 4px solid black !important;
 }
+.InterestRow {
+    line-height: 1.5em;
+}
+.Interest {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 10px;
+}

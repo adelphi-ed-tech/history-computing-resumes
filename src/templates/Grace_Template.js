@@ -27,6 +27,7 @@ import "./Grace_Template.css";
 import { FiPhoneCall as PhoneIcon } from "react-icons/fi";
 import { FaWikipediaW as WebIcon } from "react-icons/fa";
 import { FiMail as MailIcon } from "react-icons/fi";
+import {BsFillCircleFill as CircleIcon } from "react-icons/bs";
 
 const COLORS = ["#bf9553", "#ffe4e1", "#c17171"];
 
@@ -50,8 +51,10 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
                 <div className="col-4 border-end border-black border-3 p-0">
                     <div className="profile">
                         <img src={profilePic} alt={name} className="img-fluid rounded-circle" />               
-                        <img src = 'OrangeRectangle.png' />
-                        <img src = 'OrangeQuarterCircle.jpg' />
+                        <CircleIcon />
+                        <CircleIcon />
+                        <CircleIcon />
+                        <img src = 'OrangeQuarterCircle.jpg' /> 
                     </div>
 
                 <div className=""></div>
@@ -153,9 +156,9 @@ function Interests({interests}) {
 function interest(interest, i) {
     const fill = COLORS[i % COLORS.length];
     return (
-        <div className="d-flex justif-content-start" key={i}>
+        <div className="InterestRow d-flex justify-content-start align-items-center" key={i}>
             {Circle(1, fill)}
-            <h3 className="">{interest}</h3>
+            <div className="Interest">{interest}</div>
         </div>
     )
 }
@@ -204,7 +207,7 @@ function Circle(filled, color) {
     
     const fill = filled ? color : "white";
     return (
-        <div style={{ "height": "14px", "width":"20px" }} key={++circleIndex}>
+        <div className="" style={{ "height": "1.5em", "width":"20px" }} key={++circleIndex}>
             <svg xmlns="http://www.w3.org/2000/svg" height="140">
                 <circle cx="9" cy="12" r="7" fill={fill} stroke="black" strokeWidth="2" />
             </svg>

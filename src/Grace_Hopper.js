@@ -2,6 +2,7 @@ import GraceTemplate from "./templates/Grace_Template"
 import profilePic from "./res/GraceHopper.jpg"
 
 
+
 const summary = `
 Hi. I'm Grace Hopper. 
 I am an American computer scientist, mathematician, and US Navy rear admiral.
