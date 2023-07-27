@@ -28,6 +28,7 @@ import { FiPhoneCall as PhoneIcon } from "react-icons/fi";
 import { FaWikipediaW as WebIcon } from "react-icons/fa";
 import { FiMail as MailIcon } from "react-icons/fi";
 import {BsFillCircleFill as CircleIcon } from "react-icons/bs";
+import {SlStar as StarIcon} from "react-icons/sl";
 
 const COLORS = ["#bf9553", "#ffe4e1", "#c17171"];
 
@@ -50,11 +51,32 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
 
                 <div className="col-4 border-end border-black border-3 p-0">
                     <div className="profile">
-                        <img src={profilePic} alt={name} className="img-fluid rounded-circle" />               
-                        <CircleIcon />
-                        <CircleIcon />
-                        <CircleIcon />
-                        <img src = 'OrangeQuarterCircle.jpg' /> 
+                        <img src={profilePic} alt={name} className="img-fluid rounded-circle" />  
+                    </div>
+
+                        <div className = "column container-center">         
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
+                        <CircleIcon/>
+                        <StarIcon/>
                     </div>
 
                 <div className=""></div>
