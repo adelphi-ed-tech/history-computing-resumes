@@ -37,6 +37,7 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
             {/* Profile pick and summary */}
             <div className="row">
                 <div className="col-4 border-end border-black border-3 p-3">
+                <h2 className="column container bubblegum background text-secondary-center"> Resume</h2>
                     <h1>{name}</h1>
                     <h2 className="column container yellow background text-secondary">/ PROFILE</h2>
                     <p className="text-secondary">{summary}</p>
