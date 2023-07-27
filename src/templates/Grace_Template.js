@@ -61,7 +61,7 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
 
                 <div className="col-4 column container">
                     <h4 className="text-secondary">{title}</h4>
-                    <h2 className="column container yellow background text-secondary">/Experience </h2>
+                    <h2 className="column container yellow background text-secondary">/ EXPERIENCE </h2>
                     <Experience experience={experience} />                    
                 </div>
 
