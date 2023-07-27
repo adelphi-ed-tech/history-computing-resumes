@@ -42,7 +42,7 @@
 
 h1 {
     margin-top: 1;
-    font-size: 50px;
+    font-size: 47px;
     color: #0f03e7;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
@@ -50,8 +50,22 @@ h1 {
 h2 {
     margin-top: 1em;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bold, underline;
     color: #3d3b67;
+}
+
+h3 {
+    margin-top: 1em;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h4 {
+    margin-top: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    color: #bd3b3b;
 }
 
 p {

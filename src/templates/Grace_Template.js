@@ -36,47 +36,37 @@ function Grace({name, profilePic, title,phone, web, email, summary, skills, expe
 
             {/* Profile pick and summary */}
             <div className="row">
-                <div className="col-4">
+                <div className="col-4 border-end border-black border-3 p-3">
                     <h1>{name}</h1>
-                    <h2>/ PROFILE</h2>
+                    <h2 className="column container yellow background text-secondary">/ PROFILE</h2>
                     <p className="text-secondary">{summary}</p>
-                    <h2>/ SKILLS</h2>
+                    <h2 className="column container yellow background text-secondary">/ SKILLS</h2>
                     <Skills skills={skills} />
+                    <h2 className="column container yellow background text-secondary">/ INTERESTS</h2>
+                    <Interests interests={interests} /> 
                 </div>
-                <div className="col-3">
-                    <div className="profile">
-                        <img src={profilePic} alt={name} className="img-fluid rounded-circle" />
-                        <img src = './res/OrangeRectangle.png' />
-                        <img src = './res/OrangeQuarterCircle.jpg' />
-                    </div>
-                </div>
-                <div className="col-4 intro">
-                    <h2 className="text-secondary">{title}</h2>
-                    <h2>/ Experience </h2>
-                    <Experience experience={experience} />
 
-                    
-            </div>
+                <div className="col-4 border-end border-black border-3 p-0">
+                    <div className="profile">
+                        <img src={profilePic} alt={name} className="img-fluid rounded-circle" />               
+                        <img src = 'OrangeRectangle.png' />
+                        <img src = 'OrangeQuarterCircle.jpg' />
+                    </div>
+
+                <div className=""></div>
+                    <h2 className="column container yellow background text-secondary"> / EDUCATION</h2>
+                    <Education education={education} />
+                </div>
+
+                <div className="col-4 column container">
+                    <h4 className="text-secondary">{title}</h4>
+                    <h2 className="column container yellow background text-secondary">/Experience </h2>
+                    <Experience experience={experience} />                    
+                </div>
 
             {/* Skills and experience */}
            <div className="row border-top border-black border-4">
-
-                
-
-            
-                </div>
             </div>
-
-            {/* Interests and Education */}
-            <div className="row border-top border-black border-4">
-                <div className="col-3 border-end border-black border-4 p-0">
-                    <h2 className="text-center yellow border-bottom">My Interests</h2>
-                    <Interests interests={interests} />
-                </div>
-                <div className="col-9 p-0">
-                    <h2 className="text-center yellow border-bottom">My Education</h2>
-                    <Education education={education} />
-                </div>
             </div>
 
             {/* Links & contact */}
