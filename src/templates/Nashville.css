@@ -1,0 +1,151 @@
+
+.Nashville {
+	overflow: hidden;
+	max-width: 1080px;
+	}
+
+	.Nashville header, .Nashville footer {
+		background-color: #414446;
+		font-size: 48px;
+		font-weight: bold;
+		height: 300px;
+	}
+
+	.Nashville footer {
+		height: 80px;
+		font-size: 16px;
+		border-top: 5px solid black;
+	}
+
+		.Nashville footer svg {
+			font-size: 22px;
+		}
+
+		.Nashville footer .col {
+			height: 24px;
+		}
+
+		.Nashville footer a {
+			color: black;
+			text-decoration: none;
+		}
+.titleBlock {
+	background-color: #414446;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	color:white;
+}
+.centerLine {
+	color: 414446;
+	width: 550px;
+	border:none;
+	border-top:4px solid black;
+}
+
+.shortLine {
+	color: red;
+	width: 20px;
+	border: none;
+	stroke-width: 4px;
+}
+
+.blankRow {
+	height: 20px;
+}
+
+.darkGrey {
+	background-color: #414446;
+}
+
+.tan {
+	background-color: #FFD995;
+}
+
+.intro {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+
+.verticalLine {
+	background-color: grey;
+	width: 4px;
+	height: 50%;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.IconWrapper {
+	
+	
+}
+
+
+h1 {
+	margin-top: 1em;
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
+
+.box {
+	background-color: #ff0000; 
+	height: 100px; 
+	border: 1px solid #ced4da; 
+}
+
+.boxFilled {
+	background-color: #007bff;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SmallCircle {
+	width: 40px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: white;
+	border: 2px solid grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.skills h3, .interests h3, .education h3, .experience h3 {
+	font-size: 1.2em;
+}
+
+.experience h3 {
+	margin-top: 1.25em;
+}
+
+.experience h4 {
+	font-size: 1.1em;
+}
+
+.skills, .interests, .education, .experience {
+	margin-left: 50px;
+}
+
+.education, .experience {
+	margin-right: 50px;
+}
+
+.border-bottom {
+	border-bottom: 4px solid black !important;
+}

@@ -1,14 +1,15 @@
-import Memphis from "./templates/Memphis"
+import Nashville from "./templates/Nashville.js"
 import profilePic from "./res/turing.png"
 
 
 const summary = `
 Hi. I'm Alan Turing. 
-I am widely considered to be the father of theoretical 
-computer science and artificial intelligence. 
-I'm looking for a position where I can revolutionize
-the world of computer sciene and lay the groundwork
-for artificail intelligence for the next millennia.
+I am widely considered to be the father of 
+theoretical computer science and artificial
+intelligence. I'm looking for a position
+where I can revolutionize the world of computer
+sciene and lay the groundwork for artificail 
+intelligence for the next millennia.
 `
 
 const skills = {
@@ -61,15 +62,17 @@ const experience = [
 const education = [
   {
     "school": "King's College",
-    "degree": "Fellow",
-    "year": "1934",
+    "degreeType": "Fellow",
+    "degree": "Mathmatics",
+    "year": "1931-1934",
     "location": "Cambridge",
-    "summary": `His dissertation proved the central limit theorem.`
+    "summary": `Dissertation proved the central limit theorem.`
     },
   {
      "school": "Princeton University",
-     "degree": "PhD",
-     "year": "1938",
+     "degreeType": "PhD",
+     "degree": "Mathmatics",
+     "year": "1936-1938",
      "location": "Princeton, NJ",
      "summary": `Studied mathematics and cryptology at the Institute for Advanced Study`
     }
@@ -77,12 +80,12 @@ const education = [
 
 function Alan_Turing() {
   return (
-    <Memphis 
+    <Nashville 
       name="Alan Turing" 
-      title="Father of Algebra"
-      phone="212-555-1212"
-      email="algorithms720@hotmail.com"
-      web="https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi"
+      title="Father of Computers"
+      phone="+44 1908 640408"
+      email="computing@aol.com"
+      web="https://en.wikipedia.org/wiki/Alan_Turing"
       summary={summary}
       profilePic={profilePic}
       skills={skills} 
