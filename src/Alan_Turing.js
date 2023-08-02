@@ -16,14 +16,10 @@ const skills = {
   "Algebra": 5,
   "Algorithms": 5,
   "Cryptography": 5,
-  "Physics": 4,
-  "Biology": 4,
-  "Chemistry": 3,
-  "English": 4,
-  "German": 2
+  
 }
 
-const interests = ["Running", "Rowing", "Gay Rights"];
+const expertises= ["Computers", "Math", "Cryptography"];
   
 
 const experience = [
@@ -74,7 +70,7 @@ const education = [
      "degree": "Mathmatics",
      "year": "1936-1938",
      "location": "Princeton, NJ",
-     "summary": `Studied mathematics and cryptology at the Institute for Advanced Study`
+     "summary": `Mathematics and Cryptology`
     }
 ]
 
@@ -89,7 +85,7 @@ function Alan_Turing() {
       summary={summary}
       profilePic={profilePic}
       skills={skills} 
-      interests={interests} 
+      expertises={expertises} 
       experience={experience} 
       education={education} /> 
   );

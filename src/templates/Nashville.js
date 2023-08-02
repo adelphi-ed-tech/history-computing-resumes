@@ -30,12 +30,16 @@ import { FiMail as MailIcon } from "react-icons/fi";
 import { BsPersonCircle as PersonIcon } from "react-icons/bs";
 import { FaBriefcase as BriefcaseIcon } from "react-icons/fa";
 import { BsMouse2Fill as MouseIcon } from "react-icons/bs";
+import { FaRunning as RunningIcon } from "react-icons/fa";
+import { MdRowing as RowingIcon } from "react-icons/md";
+import { FaChessKing as ChessIcon } from "react-icons/fa";
+
 
 
 
 const COLORS = ["#ACC8DE", "#FBCD53", "#F656B5"];
 
-function Nashville({ name, profilePic, title, phone, web, email, summary, skills, experience, interests, education }) {
+function Nashville({ name, profilePic, title, phone, web, email, summary, skills, experience, expertises, education }) {
     return (
         <div className="Nashville">
 
@@ -53,10 +57,10 @@ function Nashville({ name, profilePic, title, phone, web, email, summary, skills
             </header>
 
 
-            {/* Skills and experience */}
+            {/* Contact and Profile */}
             <div className="container-fluid m-0 p-0 d-flex row justify-content-around">
                <div className="row">
-                    <div className="col-sm-3 justify-center">
+                    <div className="col-sm-4 tan justify-center">
                         <div className="blankRow"></div>
                         <h2 className="titleBlock text-center">Contact</h2>
                         <div className="SmallCircle text-center">
@@ -79,14 +83,13 @@ function Nashville({ name, profilePic, title, phone, web, email, summary, skills
                     </div>
                     
 
-                    <div className="col-sm-8">
+                    <div className="col-sm-7">
                         <div className="blankRow"></div>
-                        <div className="d-flex align-items-center">
-                            <h2 className="justify-left intro">Profile</h2>
-                            <div>
-                              <hr className="centerLine"/>
-                            </div>   
-                        </div>                               
+                        <div className="d-flex justify-content-start">
+                            <h2 className="intro">Profile</h2>
+                            
+                         </div>   
+                                                  
                         <p className="text-secondary">{summary}</p>
                     </div>
                 </div>
@@ -95,13 +98,15 @@ function Nashville({ name, profilePic, title, phone, web, email, summary, skills
 
         {/* Education and experience */}
             <div className="row">
-                <div className="col-3">
-                     <div className="blankRow"></div>
-                     <h2 className="titleBlock text-center">Education</h2>
+                    <div className="col-4 tan">
+                        <div className="blankRow"></div>
+                        <h2 className="titleBlock text-center">Education</h2>
                         <Education education={education} />
-
-
-
+                        <div className="blankRow"></div>
+                        <h2 className="titleBlock text-center ">Expertise</h2>
+                        <div className="d-flex text-center">
+                            <Expertises expertises={expertises} />
+                        </div>
                  </div>
 
                 <div className="col-sm-1 d-flex flex-column align-items-center">
@@ -113,24 +118,31 @@ function Nashville({ name, profilePic, title, phone, web, email, summary, skills
                 </div>
 
 
-                <div className="col-8 p-0">
-                   <div className="d-flex align-items-center">
-                            <h2 className="justify-left intro">Experience</h2>
-                            <div>
-                                <hr className="centerLine" />
-                            </div>
+                <div className="col-7">
+                   <div className="d-flex">
+                            <h2 className="align-left intro">Experience</h2>
+                            <hr className="centerLine" />
                    </div>
+                             
                     
-                    <Experience experience={experience} />
-                </div>
+                        <Experience experience={experience} />
+                    </div>
+                
             </div>
 
             {/* Interests and Skills */}
             <div className="row">
-                <div className="col-3 -4 p-0">
-                    <h2 className="titleBlock text-center ">INTERESTS</h2>
-                    <Interests interests={interests} />
-                </div>
+                    <div className="col-4 -4 p-0 tan">
+                        <h2 className="titleBlock text-center ">Interests</h2>
+                        <div className="d-flex text-center">
+                            <div className="spacerBlock"></div>
+                            <div className="SmallCircle"><span><RunningIcon size={30} color="grey" /></span></div>
+                            <div className="spacerBlock"></div>
+                            <div className="SmallCircle"><span><ChessIcon size={30} color="grey" /></span></div>
+                             <div className="spacerBlock"></div>
+                            <div className="SmallCircle"><span><RowingIcon size={30} color="grey" /></span></div>
+                        </div>
+                 </div>
 
                 <div className="col-sm-1 d-flex flex-column align-items-center">
                         <div className="blankRow"></div>
@@ -141,8 +153,8 @@ function Nashville({ name, profilePic, title, phone, web, email, summary, skills
                 </div>
 
 
-               <div className="col-8 p-0">
-                        <div className="d-flex align-items-center">
+               <div className="col-7 p-0">
+                        <div className="d-flex">
                             <h2 className="justify-left intro">Skills</h2>
                             <div>
                                 <hr className="centerLine" />
@@ -190,15 +202,19 @@ function Experience({ experience }) {
 function Work({ company, title, years, location, summary }, i) {
     return (
         <div className="work" key={company}>
-            <h3>{company}</h3>
-            <h4 className="text-secondary">{title}</h4>
+            <div className="d-flex">
+                <h3 className="text-left font-italic">{company}</h3>
+                <span className="text-secondary text-right">{years}</span>
+              
+            </div>
+            <h4 className="text-secondary text-left"><u>{title}</u></h4>
+            
             <div>
                 <span className="text-secondary">{location}</span>
-                <span className="text-bubblegum"> | </span>
-                <span className="text-secondary">{years}</span>
+                            
             </div>
 
-            <p className="">{summary}</p>
+            <p className="text-secondary">{summary}</p>
         </div>
     )
 }
@@ -218,7 +234,7 @@ function School({ school, degreeType, degree, year, location, summary }, i) {
     return (
         <div className="school" key={school}>
             <div className="text-center">
-                <h3>{degreeType}</h3>
+                <div className="degreeStyle"><h3>{degreeType}</h3></div>
                 <div>
                     <span className="text-secondary text-center">{degree}</span>
                 </div>
@@ -228,29 +244,29 @@ function School({ school, degreeType, degree, year, location, summary }, i) {
                 <div>
                     <span className="text-secondary text-center">{school}</span>
                   </div>
-            <p className="text-center">{summary}</p>
+            <p className="educationSummary">{summary}</p>
             </div>
         </div>
     )
 }
 
-function Interests({ interests }) {
+function Expertises({ expertises }) {
 
-    const interestRows = interests.map(interest);
+    const expertiseRows = expertises.map(expertise);
 
     return (
-        <div className="interests">
-            {interestRows}
+        <div className="expertises">
+            {expertiseRows}
         </div>
     )
 }
 
-function interest(interest, i) {
+function expertise(expertise, i) {
     const fill = COLORS[i % COLORS.length];
     return (
         <div className="d-flex justif-content-start" key={i}>
             {Circle(1, fill)}
-            <h3 className="">{interest}</h3>
+            <h3 className="">{expertise}</h3>
         </div>
     )
 }
@@ -292,6 +308,7 @@ function skill(name, level, color) {
         </div>
     )
 }
+
 
 let circleIndex = 0;
 
